@@ -170,14 +170,18 @@ main{
     background-color: #555;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+}
+
 #foot{
     background-color: #333;
-    overflow: hidden;
+    width:900px;
     color: #fff;
     opacity: 0.6;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
