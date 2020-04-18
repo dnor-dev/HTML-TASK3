@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Roboto:wght@300&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Roboto:wght@300&display=swap');
+
+*{
     margin: 0;
     padding:0;
 }
@@ -7,12 +9,13 @@ body{
    background: #eee;
    font-family: 'Roboto', sans-serif;
    font-weight: bolder;
+   position: relative;
 }
 
 main{
-    max-width:1000px;
+    max-width:1050px;
     margin: auto;
-    box-shadow:30px 0px  40px rgba(0,0,0,0.2), -30px 0px 40px rgba(0,0,0,0.2);
+    box-shadow:30px 0px  40px rgba(0,0,0,0.3), -30px 0px 40px rgba(0,0,0,0.3);
 }
 
 
@@ -76,4 +79,171 @@ main{
     color: #eee;
     
 }
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+}
+
+.content .innerbox{
+    margin-bottom: 4rem;
+    padding: 3rem 3rem;
+    border-top-left-radius: 50PX;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow:30px 0px  40px rgba(0,0,0,0.1), -30px 0px 40px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bolder;
+    color: #333;
+    width: 20rem;
+
+}
+
+
+
+ h3{
+    margin-bottom: 1.3rem;
+    font-size: 2.7rem;
     
+
+}
+
+.innerbox p{
+    font-size: 1.4rem;
+}
+
+.about-me{
+    display: flex;
+    width:50rem;
+    margin-bottom: 4rem;
+    padding: 3rem 3rem;
+    border-top-left-radius: 50PX;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow:30px 0px  40px rgba(0,0,0,0.1), -30px 0px 40px rgba(0,0,0,0.1);
+    font-weight: bolder;
+    color: #333;
+    text-align: left;
+    height: 30rem;
+}
+
+.about-me-text{
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    word-spacing: 0.4rem;
+    line-height: 2rem;
+
+}
+
+.about-me-text p{
+    font-size: larger;
+}
+
+.about-me-img img{
+    height: 30rem;
+}
+
+
+#mybtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right:30px;
+    z-index: 99;
+    border:none;
+    outline: none;
+    background-color: #333;
+    color: #eee;
+    cursor: pointer;
+    padding:15px;
+    border-radius:20px;
+    font-size: 20px;
+    transition:background 300ms ease;
+}
+
+#mybtn:hover{
+    background-color: #555;
+}
+
+#foot{
+    background-color: #333;
+    overflow: hidden;
+    color: #fff;
+    opacity: 0.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form .split-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-form .split-name .fname{
+    margin-right: 1rem;
+}
+
+.contact-form label{
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.contact-form input{
+    width: 18rem;
+    height: 2.3rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form input:focus{
+    outline:none;
+}
+
+.contact-form textarea{
+    width: 35rem ;
+    height:5rem ;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit-btn{
+    border: none;
+}
+
+
+.submit-btn a{
+    text-decoration: none;
+    border: 1px solid #333;
+    color: black;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    display: block;
+    transition: background 300ms ease;
+}
+
+.submit-btn a:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,67 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Profile</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
         <div class="landing">
             <div class="landing-display">
                 <h2>I'm David Norue </h2>
                 <h4>A Front-End Developer</h4>
-                <button class="btn"><a href="">Biodata</a></button>
-                <button class="btn"><a href="">Contact</a></button>
+                <button class="btn" onclick="biodata()"><a href="#Name">My Biodata</a></button>
+                <button class="btn" onclick="contact()"><a href="#foot">Contact</a></button>
             </div>
             <div class="landing-image">
                 <img src="DNor.jpeg" alt="personal-image">
             </div>
         </div>
         <div class="content">
-            <div class="Name">
+            <div class="innerbox" id="Name">
                 <h3>My Name</h3>
                 <p>My name is David Norue</p>
             </div>
-            <div class="state-of-origin">
+            <div class="state-of-origin innerbox">
                 <h3>State Of Origin</h3>
-                    <p>I hail from Imo state</p>
+                <p>I hail from Imo state</p>
             </div>
-            <div class="date-of-birth">
+            <div class="date-of-birth innerbox">
                 <h3>Date Of Birth</h3>
                 <p>22nd of September 2001</p>
             </div>
-            <div class="address">
+            <div class="address innerbox">
                 <h3>Address</h3>
                 <p>2a Karimu street, Isolo, Lagos</p>
             </div>
-            <div class="occupation">
+            <div class="occupation innerbox">
                 <h3>Occupation</h3>
                 <p>Front-End Developer</p>
             </div>
-            <div class="hometown">
+            <div class="hometown innerbox">
                 <h3>Hometown</h3>
                 <p>Mbaise,Imo state</p>
             </div>
-            <div class="slack-id">
+            <div class="slack-id innerbox">
                 <h3>Slack-ID</h3>
                 <p>DNor</p>
             </div>
-            <div class="picture"> 
-                <h3>ME</h3>                          
-                <img src="DNor.jpeg" alt="">
+
+            <div class="about-me">
+                <div class="about-me-text">
+                    <h3>About Me</h3>
+                    <p>I'm David Norue, i'm currently a student of FUTO studying Electrical & Electronics Engineering.
+                        I'm also pursuing my dreams of becoming a Front-End Developer and gaining my way into the world
+                        of Tech. I love learning new developments in the tech industry, i also love playing musical
+                        instruments(drums to be precise). I want to get more involved with tech and pave one or two ways
+                        with it in the nearest future.</p>
+                </div>
+                <div class="about-me-img">
+                    <img src="DNor.jpeg" alt="">
+                </div>
             </div>
         </div>
 
-        <div class="about-me">
-            <h3>About Me</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ut.</p>
-        </div>
+
     </main>
+    <button id="mybtn" title="Go to top" onclick="topFunction()">Top</button>
 
     <footer>
+        <div id="foot">
+            <div id="footer-text">
+                <h3>Contact Form</h3>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <label for="Name">Name</label><br>
+                    <div class="split-name">
+                        <div class="fname">
+                            <input type="text" name="Name" id="name" required><br>
+                            <p>First</p>
+                        </div>
+                        <div class="lname">
+                            <input type="text" name="Name" id="name" required><br>
+                            <p>Last</p>
+                        </div>
+                    </div>
 
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="Email" required><br><br>
+
+
+                    <label for="website">Website</label><br>
+                    <input type="url" name="website" id="web"><br><br>
+
+                    <label for="message">Comment or Message</label><br>
+                    <textarea name="message" id="Message" cols="30" rows="5"></textarea><br>
+
+                    <button class="submit-btn" type="submit"><a href="">Submit</a></button>
+                </form>
+            </div>
+        </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+
 </body>
+
 </html>
