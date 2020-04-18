@@ -18,6 +18,14 @@ main{
     box-shadow:30px 0px  40px rgba(0,0,0,0.3), -30px 0px 40px rgba(0,0,0,0.3);
 }
 
+@media only screen and (max-width:600px){
+    main{
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
+
 
 .landing{
     display: flex;
@@ -28,20 +36,51 @@ main{
     height: 100vh;
 }
 
+@media only screen and (max-width:728px){
+    .landing{
+        display: block;
+        height: 100vh;
+        margin-top: -3rem;
+    }
+
+}
+
 .landing-display{
     margin: 2rem;
     padding: 1rem;
 
 } 
 
+@media only screen and (max-width:728px){
+    .landing-display{
+        margin: 4rem;
+    }
+}
+
 .landing-display h2{
     font-size: 4rem;
     margin: 1rem;
 }
 
+@media only screen and (max-width:728px){
+    .landing-display h2{
+        font-size: 2.5rem;
+        margin: 0.3;
+    }
+}
+
 .landing-display h4{
     font-size:2.5rem;
     margin: 3rem;
+}
+
+
+@media only screen and (max-width:728px){
+    .landing-display h4{
+        font-size:1.5rem ;
+        margin: 1rem;
+        margin-bottom: 0.2rem;
+    }
 }
 
 .landing-image{
@@ -50,6 +89,23 @@ main{
 }
 .landing-image img{
     height:100vh;
+}
+
+@media only screen and (max-width:728px){
+    .landing-image{
+        margin-bottom: 3rem;
+    }
+}
+
+@media only screen and (max-width:728px){
+    .landing-image img{
+        width: 90%;
+        margin-bottom: 3rem;
+        border-top-left-radius: 50PX;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
 }
 
 .btn{
@@ -74,6 +130,13 @@ main{
     margin-right: 30px;
     
 }
+
+@media only screen and (max-width:728px){
+    .btn a{
+        font-size: 1rem;
+    }
+}
+
 .btn a:hover{
     background-color: #333;
     color: #eee;
@@ -86,6 +149,12 @@ main{
     flex-direction: column;
     align-items: center;
     margin: 3rem;
+}
+
+@media only screen and (max-width:728px){
+    .content{
+        margin-top: 22rem;
+    }
 }
 
 .content .innerbox{
@@ -102,17 +171,37 @@ main{
 
 }
 
+@media only screen and (max-width:728px){
+    .content .innerbox{
+        margin-bottom:2rem;
+        padding: 1rem 1rem;
+        font-weight: normal;
+        width: 15rem;
+    }
+}
+
 
 
  h3{
     margin-bottom: 1.3rem;
     font-size: 2.7rem;
-    
+}
 
+@media only screen and (max-width:728px){
+    h3{
+        margin-bottom:0.7rem;
+        font-size: 2rem;
+    }
 }
 
 .innerbox p{
     font-size: 1.4rem;
+}
+
+@media only screen and (max-width:728px){
+    .innerbox p{
+        font-size: 1rem;
+    }
 }
 
 .about-me{
@@ -131,6 +220,13 @@ main{
     height: 30rem;
 }
 
+@media only screen and (max-width:728px){
+    .about-me{
+        display: flex;
+        width: auto;
+    }
+}
+
 .about-me-text{
     justify-content: center;
     align-items: center;
@@ -144,8 +240,22 @@ main{
     font-size: larger;
 }
 
+@media only screen and (max-width:728px){
+    .about-me-text{
+        font-size: small;
+        line-height: 20px;
+        margin-left:-2rem ;
+    }
+}
+
 .about-me-img img{
     height: 30rem;
+}
+
+@media only screen and (max-width:728px){
+    .about-me-img img{
+        width: 10rem;
+    }
 }
 
 
@@ -183,6 +293,17 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-top-left-radius: 50PX;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin: 1rem;
+}
+
+@media only screen and (max-width:728px){
+    #foot{
+        width: 80%;
+    }
 }
 
 .contact-form .split-name{
@@ -190,6 +311,21 @@ footer{
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+}
+
+@media only screen and (max-width:728px){
+    .contact-form{
+        margin: auto;
+        padding: 1.5rem;
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width:728px){
+    .contact-form .split-name{
+        display: block;
+        margin-bottom: 0.9rem;
+    }   
 }
 
 .contact-form .split-name .fname{
@@ -209,6 +345,12 @@ footer{
     border-radius: 5px;
 }
 
+@media only screen and (max-width:728px){
+    .contact-form input{
+        height: 1.8rem;
+    }
+}
+
 .contact-form input:focus{
     outline:none;
 }
@@ -220,8 +362,15 @@ footer{
     border-radius: 5px;
 }
 
+@media only screen and (max-width:728px){
+    .contact-form textarea{
+        width: 20rem;
+    }
+}
+
 .submit-btn{
     border: none;
+    margin: 1rem;
 }
 
 
@@ -238,6 +387,12 @@ footer{
 .submit-btn a:hover{
     background-color: #333;
     color: #fff;
+}
+
+@media only screen and (max-width:728px){
+    .split-name .fname{
+        margin-bottom: 1rem;
+    }
 }
 
 
