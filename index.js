@@ -31,3 +31,14 @@ let conTact = $('#foot').position().top;
 function contact(){
     $("html , body").animate({scrollTop:conTact},900)
 }
+
+ScrollReveal().reveal('.about-me', {
+    delay:200,
+    duration:700,
+    reset:true
+});
+ScrollReveal().reveal('.innerbox' , {
+    delay:200,
+    duration:700,
+    reset:true
+});

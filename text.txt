@@ -1,0 +1,19 @@
+.btn{
+    border: none;
+    border-radius: 20px;
+    background-color: #eee;
+    text-align: center;
+    padding:0.5rem 2rem;
+    border:1px solid #ccc;
+    display:inline-block;
+    margin: 3rem 0 0;
+    border-top-left-radius: 30PX;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-decoration:none;
+    color:#333;
+    transition:background 500ms ease;
+    font-size: 1.3rem;
+    margin-right: 30px;
+}
+
