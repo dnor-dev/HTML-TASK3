@@ -7,6 +7,8 @@
     <title>Personal Profile</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -77,35 +79,38 @@
                 <h3>Contact Form</h3>
             </div>
             <div class="contact-form">
-                <form>
-                    <label for="Name">Name</label><br>
-                    <div class="split-name">
-                        <div class="fname">
-                            <input type="text" name="Name" id="name" required placeholder="Enter your firstname"><br>
-                            <p>First</p>
+                    <form name="Contact-form" id="contact-form">
+                        <label for="Name">Name</label><br>
+                        <div class="split-name">
+                            <div class="fname">
+                                <input type="text" name="Name" id="firstName" required placeholder="Enter your firstname (required)"><br>
+                                <p>First</p>
+                            </div>
+                            <div class="lname">
+                                <input type="text" name="Name" id="lastName" required placeholder="Enter your lastname (required)"><br>
+                                <p>Last</p>
+                            </div>
                         </div>
-                        <div class="lname">
-                            <input type="text" name="Name" id="name" required placeholder="Enter your lastname"><br>
-                            <p>Last</p>
-                        </div>
-                    </div>
-
-                    <label for="email">Email</label><br>
-                    <input type="email" name="email" id="Email" required placeholder="Enter your email"><br><br>
-
-
-                    <label for="website">Website</label><br>
-                    <input type="url" name="website" id="web"><br><br>
-
-                    <label for="message">Comment or Message</label><br>
-                    <textarea name="message" id="Message" cols="30" rows="5" placeholder="Your message"></textarea><br>
-
-                    <button class="submit-btn" type="submit"><a href="">Submit</a></button>
-                </form>
+    
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="Email" required placeholder="Enter your email (required)" name="_replyto"><br><br>
+    
+    
+                        <label for="website">Website</label><br>
+                        <input type="url" name="website" id="web" placeholder="optional"><br><br>
+    
+                        <label for="message">Comment or Message</label><br>
+                        <textarea name="message" id="Message" cols="30" rows="5" placeholder="Your message"></textarea><br>
+    
+                        <input type="submit" value="Submit">
+                    
+                    </form>
             </div>
         </div>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="index.js"></script>
 

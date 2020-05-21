@@ -214,28 +214,25 @@ footer {
   border: none;
   border-radius: 5px;
   padding: 0.8rem 1rem;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
-.submit-btn {
-  border: none;
-  margin: 1rem;
+
+
+input[type=submit]{
+  width: auto;
+  margin: 1rem 0;
+  padding: 1rem 1rem 1rem 1rem;
+  padding-bottom: 2rem;
+  border-radius: 0px;
+  transition: background ease-in-out 300ms;
 }
 
-.submit-btn a {
-  text-decoration: none;
-  border: 1px solid #333;
-  color: black;
-  padding: 0.5rem;
-  font-size: 1.1rem;
-  display: block;
-  transition: background 300ms ease;
+input[type=submit]:hover{
+  background-color: black;
+  color:#fff;
 }
 
-.submit-btn a:hover {
-  background-color: #333;
-  color: #fff;
-}
 
 /* Media Queries */
 
@@ -294,8 +291,8 @@ footer {
 
  .content .innerbox{
    margin:auto;
-    margin-bottom: 3rem; 
-    padding: 2rem; 
+    margin-bottom: 5rem; 
+    padding: 6rem 8rem; 
   }
 
 
@@ -304,6 +301,7 @@ footer {
     width: 75%;
     margin: auto;
     margin-top: 3rem;
+    margin-bottom: 4rem;
     text-align: left;
   }
 
@@ -351,6 +349,10 @@ footer {
 
 #mybtn{
   bottom: 3rem;
+}
+
+input[type=submit]{
+  width: auto;
 }
 }
 
@@ -403,8 +405,92 @@ footer {
   display:none
 }
 
+.about-me{
+  width: 95%;
+  height: 45%;
+}
+
 #mybtn{
   right: 5rem;
+}
+
+}
+
+@media screen and (width:736px){
+  main{
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .landing{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+
+  .landing-display{
+    margin-top: 1rem;
+  }
+
+  .landing-display h4{
+    margin-top: 5px;
+    margin-bottom: 2px;
+  }
+
+  .landing-image{
+    margin: auto;
+    width: auto;
+    height: auto;
+  }
+
+  .landing-image img{
+    width: 100%;
+  }
+
+  .about-me{
+    width: 95%;
+    height: 50%;
+  }
+}
+
+
+@media screen and (width:832px){
+  main{
+    width:100%;
+    box-shadow:none ;
+  }
+
+  .landing{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+
+  .landing-display{
+    margin-top: 1rem;
+  }
+
+  .landing-display h4{
+    margin-top: 5px;
+    margin-bottom: 2px;
+  }
+
+  .landing-image{
+    margin: auto;
+    width: auto;
+    height: auto;
+  }
+
+  .landing-image img{
+    width: 100%;
+  }
+
+  .about-me{
+    width: 95%;
+    height: 50%;
+  }
 }
 
 }

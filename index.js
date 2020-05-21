@@ -42,3 +42,27 @@ ScrollReveal().reveal('.innerbox' , {
     duration:700,
     reset:true
 });
+
+
+document.querySelector('#contact-form').addEventListener('submit', function(e){
+    var fname = document.querySelector('#firstName').value;
+    var lname = document.querySelector('#lastName').value;
+    var email = document.querySelector('#Email').value;
+    var message = document.querySelector('#Message').value;
+    var web = document.querySelector('#web').value;
+
+    if (!fname || !lname || !email || !message){
+        e.preventDefault();
+        alertify.error('Please fill in required entries')
+    }else{
+        $.ajax({
+            url:"https://formspree.io/anorue4rss@hotmail.com",
+            method:"POST",
+            data: $(this).serialize(),
+            dataType:"json"
+        });
+        e.preventDefault();
+        $(this).get(0).reset();
+        alertify.success('Message Sent!');
+    }
+});
